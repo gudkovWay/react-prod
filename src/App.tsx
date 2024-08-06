@@ -8,11 +8,12 @@ import { MainPageAsync } from "./pages/MainPage/MainPage.async";
 import Header from "./components/Header";
 
 import "./styles/index.scss";
+import { classNames } from "./helpers/classNames/classNames";
 
 const App = () => {
   const { theme } = useTheme();
   return (
-    <div className={`app ${theme}`}>
+    <div className={classNames("app", {}, [theme])}>
       <Header />
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
