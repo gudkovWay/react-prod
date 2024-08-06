@@ -1,0 +1,17 @@
+* В прод на React. Курс от Ulbi tv.
+
+** gh flow:
+
+*** Branches:
+Main contain all epics.
+
+[epic_name] contain previos epics and current. For current epic have README, which had description about epic. Their characteristics:
+| Name of Epic | Short description | What new to know for meself |
+|--------------+-------------------+-----------------------------|
+|--------------+-------------------+-----------------------------|
+|--------------+-------------------+-----------------------------|
+|--------------+-------------------+-----------------------------|
+|--------------+-------------------+-----------------------------|
+
+
+** bulding...
