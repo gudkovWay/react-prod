@@ -3,15 +3,12 @@
 ** gh flow:
 
 *** Branches:
-Main contain all epics.
+Main branch contain final version build by all epics.
 
-[epic_name] contain previos epics and current. For current epic have README, which had description about epic. Their characteristics:
-| Name of Epic | Short description | What new to know for meself |
-|--------------+-------------------+-----------------------------|
-|--------------+-------------------+-----------------------------|
-|--------------+-------------------+-----------------------------|
-|--------------+-------------------+-----------------------------|
-|--------------+-------------------+-----------------------------|
+[epic_name] branch contain previos epics and current. For current epic have README, which had description about epic. Their characteristics:
+| Epic Name         | --- |
+| Short description | --- |
+| What new to know  | --- |
 
 
 ** bulding...
