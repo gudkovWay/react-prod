@@ -1,16 +1,10 @@
 * В прод на React. Курс от Ulbi tv.
 
-** gh flow:
+** Webpack Epic:
 
-*** Branches:
-Main contain all epics.
+*** Characteristics:
 
-[epic_name] contain previos epics and current. For current epic have README, which had description about epic. Their characteristics:
-| Name of Epic | Short description | What new to know for meself |
-|--------------+-------------------+-----------------------------|
-|--------------+-------------------+-----------------------------|
-|--------------+-------------------+-----------------------------|
-|--------------+-------------------+-----------------------------|
-|--------------+-------------------+-----------------------------|
-
-** building...
+| Epic name | Webpack|
+| Short Description | In this epic upgrade work via webpack, structure code by fsd (~80-90%), first pages & configs for webpack |
+| What new to know | Suspence component & Webpack settings |
+| Best features | custom classname gen func & Build webpack conf |
