@@ -1,4 +1,4 @@
-import { useTheme } from "../../theme/useTheme";
+import { useTheme } from "app/providers/ThemeProvider";
 
 const Header = () => {
   const { toggleTheme } = useTheme();
