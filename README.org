@@ -10,5 +10,4 @@ Main branch contain final version build by all epics.
 | Short description | --- |
 | What new to know  | --- |
 
-
-** bulding...
+** building...
