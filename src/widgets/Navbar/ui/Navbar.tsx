@@ -1,5 +1,6 @@
-import { classNames } from "shared/lib/helpers/classNames/classNames";
+import { useTranslation } from "react-i18next";
 
+import { classNames } from "shared/lib/helpers/classNames/classNames";
 import { AppLink, AppLinkTheme } from "shared/ui/AppLink/AppLink";
 import { RoutePath } from "shared/config/routeConfig/routeConfig";
 
@@ -10,6 +11,7 @@ interface NavbarProps {
 }
 
 export const Navbar = ({ className }: NavbarProps) => {
+  const { t } = useTranslation("shared");
   return (
     <nav className={classNames(cls.Navbar, {}, [className])}>
       <div className={cls.links}>
@@ -18,10 +20,10 @@ export const Navbar = ({ className }: NavbarProps) => {
           className={cls.mainLink}
           theme={AppLinkTheme.INVERTED}
         >
-          Главная
+          {t("Главная")}
         </AppLink>
         <AppLink to={RoutePath.about} theme={AppLinkTheme.ADDITIONAL}>
-          О сайте
+          {t("О сайте")}
         </AppLink>
       </div>
     </nav>
