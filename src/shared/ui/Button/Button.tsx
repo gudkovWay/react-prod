@@ -13,15 +13,18 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const Button: FC<ButtonProps> = (props) => {
   const {
-    children,
     onClick,
+    children,
     className,
+    type = "button",
     theme = ButtonTheme.CLEAR,
     ...otherProps
   } = props;
 
   return (
     <button
+      /* eslint-disable react/button-has-type */
+      type={type}
       className={classNames(cls.Button, {}, [className, cls[theme]])}
       onClick={onClick}
     >
