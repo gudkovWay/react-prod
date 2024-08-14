@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true,
   },
   extends: ["plugin:react/recommended", "airbnb", "plugin:i18next/recommended"],
   parser: "@typescript-eslint/parser",
@@ -17,6 +18,7 @@ module.exports = {
     "react/jsx-indent": 2,
     "react/jsx-indent-props": 2,
     indent: 2,
+    "max-len": ["error", { code: 120, ignoreComments: true }],
     quotes: ["error", "double"],
     "react/jsx-filename-extension": [
       2,
