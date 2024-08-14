@@ -6,8 +6,8 @@
 Main branch contain final version build by all epics.
 
 [epic_name] branch contain previos epics and current. For current epic have README, which had description about epic. Their characteristics:
-| Epic Name         | --- |
-| Short description | --- |
-| What new to know  | --- |
+| Epic Name         | App Router |
+| Short description | Work via router & test & eslint|prettier|stylelint |
+| What new to know  |nothing  |
 
 ** building...
