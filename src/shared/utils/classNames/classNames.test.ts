@@ -1,4 +1,4 @@
-import { classNames } from "./classNames";
+import { classNames } from "shared/utils/classNames/classNames";
 
 describe("classNames", () => {
   test("via only first param", () => {
@@ -12,7 +12,7 @@ describe("classNames", () => {
   test("via all params", () => {
     const expected = "someClass class1 class2 hovered";
     expect(
-      classNames("someClass", { hovered: true }, ["class1", "class2"]),
+      classNames("someClass", { hovered: true }, ["class1", "class2"])
     ).toBe(expected);
   });
 });

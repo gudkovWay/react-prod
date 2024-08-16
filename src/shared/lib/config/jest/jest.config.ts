@@ -1,5 +1,5 @@
 export default {
-  rootDir: "../../../../",
+  rootDir: "../../../../../",
   testEnvironment: "jsdom",
   coveragePathIgnorePatterns: ["/node_modules/"],
   moduleDirectories: ["node_modules"],
