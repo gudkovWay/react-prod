@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import { classNames } from "shared/lib/helpers/classNames/classNames";
 import { AppLink, AppLinkTheme } from "shared/ui/AppLink/AppLink";
-import { RoutePath } from "shared/config/routeConfig/routeConfig";
+import { RoutePath } from "shared/lib/config/routeConfig/routeConfig";
 
 import cls from "./Navbar.module.scss";
 

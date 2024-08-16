@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Route, Routes } from "react-router-dom";
 
 import { PageLoader } from "widgets/PageLoader";
-import { routeConfig } from "shared/config/routeConfig/routeConfig";
+import { routeConfig } from "shared/lib/config/routeConfig/routeConfig";
 
 export const AppRouter = () => {
   const { t } = useTranslation();
