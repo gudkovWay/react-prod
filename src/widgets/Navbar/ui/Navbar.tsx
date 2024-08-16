@@ -1,31 +1,25 @@
-import { useTranslation } from "react-i18next";
-
 import { classNames } from "shared/utils/classNames/classNames";
 import { AppLink, AppLinkTheme } from "shared/ui/AppLink/AppLink";
-import { RoutePath } from "shared/config/routeConfig/routeConfig";
-
+import { useTranslation } from "react-i18next";
 import cls from "./Navbar.module.scss";
 
 interface NavbarProps {
-  className?: string;
+    className?: string;
 }
 
 export const Navbar = ({ className }: NavbarProps) => {
-  const { t } = useTranslation("shared");
+  const { t } = useTranslation();
+
   return (
-    <nav className={classNames(cls.Navbar, {}, [className])}>
+    <div className={classNames(cls.Navbar, {}, [className])}>
       <div className={cls.links}>
-        <AppLink
-          to={RoutePath.main}
-          className={cls.mainLink}
-          theme={AppLinkTheme.INVERTED}
-        >
+        <AppLink theme={AppLinkTheme.SECONDARY} to="/" className={cls.mainLink}>
           {t("Главная")}
         </AppLink>
-        <AppLink to={RoutePath.about} theme={AppLinkTheme.ADDITIONAL}>
+        <AppLink theme={AppLinkTheme.RED} to="/about">
           {t("О сайте")}
         </AppLink>
       </div>
-    </nav>
+    </div>
   );
 };
