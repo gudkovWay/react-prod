@@ -1,3 +1,5 @@
+import path from "path";
+
 export default {
   rootDir: "../../../../../",
   testEnvironment: "jsdom",
@@ -5,7 +7,12 @@ export default {
   moduleDirectories: ["node_modules"],
   modulePaths: ["<rootDir>src"],
   moduleFileExtensions: ["js", "jsx", "ts", "tsx", "json", "node"],
+  setupFilesAfterEnv: ["<rootDir>src/shared/config/lib/jest/setupTests.ts"],
   testMatch: ["<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)"],
+  moduleNameMapper: {
+    "\\.svg": path.resolve(__dirname, "jestEmptyComponent.tsx"),
+    "\\.s?css$": "identity-obj-proxy",
+  },
   clearMocks: true,
 
   // All imported modules in your tests should be mocked automatically
